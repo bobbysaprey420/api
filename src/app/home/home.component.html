@@ -1,0 +1,11 @@
+<h2 style="text-align: center;">Covid Data</h2>
+<div>
+  <h3>State</h3>
+  <div *ngFor="let s of state;let i = index">
+    <em><a [routerLink]="" (click)="sendData(s,i)"><em><h4>{{s}}</h4></em></a></em>
+  </div>
+  <h3>Union Teritorries</h3>
+  <div *ngFor="let u of union">
+    <em><h4>{{u}}</h4></em>
+  </div>
+</div>

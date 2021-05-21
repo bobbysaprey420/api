@@ -1,0 +1,16 @@
+<h2>{{district}}</h2>
+
+<div class="card">
+    <div class="container">
+        <h4>Active : {{districtData.active}}</h4>
+        <h4>Confirmed : {{districtData.confirmed}}</h4>
+        <h4>Deceased : {{districtData.deceased}}</h4>
+        <h4>Migrated Other : {{districtData.migratedother}}</h4>
+        <h4>Recovered : {{districtData.recovered}}</h4>
+        <h4>Delta :</h4>
+        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Confirmed : {{districtData.delta.confirmed}}</h4>
+        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deceased : {{districtData.delta.deceased}}</h4>
+        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recovered : {{districtData.delta.recovered}}</h4>
+        <h4 *ngIf="districtData.notes" style="color: red;">Notes : {{districtData.notes}}</h4>
+    </div>
+</div>
